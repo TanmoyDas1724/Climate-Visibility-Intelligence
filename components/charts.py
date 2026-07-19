@@ -46,3 +46,21 @@ def scatter_chart(df, x, y, color=None, title="Scatter Plot"):
         fig,
         use_container_width=True,
     )
+
+
+
+def correlation_heatmap(df):
+
+    corr = df.select_dtypes(include="number").corr()
+
+    fig = px.imshow(
+        corr,
+        text_auto=".2f",
+        aspect="auto",
+        title="Correlation Heatmap"
+    )
+
+    st.plotly_chart(
+        fig,
+        use_container_width=True
+    )
