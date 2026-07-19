@@ -4,6 +4,8 @@ st.set_page_config(
     page_icon=":house:",
     layout="wide"
 )
+
+
 with st.container():
 
     left_col, right_col = st.columns([2,1])
@@ -44,3 +46,77 @@ with st.container():
             value="8.42 km",
             delta="Good Visibility"
         )
+
+st.markdown("---")
+
+st.subheader(":airplane: Features")
+
+st.write(
+    "Everything you need to analyze weather visibility using Artificial Intelligence."
+)
+col1, col2, col3, col4, col5 = st.columns(5)
+
+# -------------------------
+# Card 1
+# -------------------------
+
+with col1:
+    st.info(":robot: AI Powered Models")
+
+    st.write("""
+Multiple ML models including
+
+• Linear Regression
+
+• Decision Tree
+
+• Random Forest
+
+• XGBoost
+""")
+
+# -------------------------
+# Card 2
+# -------------------------
+
+with col2:
+    st.info(":bar_chart: Explainable AI")
+
+    st.write("""
+Understand why every prediction
+was made using SHAP Explainable AI.
+""")
+
+# -------------------------
+# Card 3
+# -------------------------
+
+with col3:
+    st.info(":chart_with_upwards_trend: Advanced Analytics")
+
+    st.write("""
+Interactive visualizations,
+feature importance and
+statistical insights.
+""")
+
+# -------------------------
+# Card 4
+# -------------------------
+
+with col4:
+    st.info(":material/download: Download Reports")
+
+    st.write("""
+Download prediction reports
+in PDF and CSV format.
+""")
+
+with col5:
+    st.info(":material/verified: Reliable & Fast")
+
+    st.write("""
+Optimized ML pipeline
+with high accuracy and
+fast predictions.
+""")
