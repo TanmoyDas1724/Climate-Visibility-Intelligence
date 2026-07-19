@@ -1,0 +1,58 @@
+/* ==========================================
+   Climate Visibility Dashboard Theme
+========================================== */
+
+.main {
+    background-color: #0F172A;
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: #CBD5E1;
+}
+
+div.stButton > button {
+    background: linear-gradient(90deg,#7C3AED,#2563EB);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+}
+
+div.stButton > button:hover {
+    background: linear-gradient(90deg,#9333EA,#3B82F6);
+}
+
+/* Sidebar background */
+[data-testid="stSidebar"]{
+    background:#20222b;
+}
+
+/* Sidebar buttons */
+.stButton > button{
+    border-radius:14px;
+    border:none;
+    font-weight:600;
+    height:48px;
+    background:linear-gradient(90deg,#7c3aed,#2563eb);
+    color:white;
+    transition:0.3s;
+}
+
+.stButton > button:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 15px rgba(124,58,237,.45);
+}
