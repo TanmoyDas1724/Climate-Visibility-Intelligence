@@ -223,6 +223,4 @@ def show():
                 "Tuned XGBoost"
             )
 
-           
-
         show_footer()
