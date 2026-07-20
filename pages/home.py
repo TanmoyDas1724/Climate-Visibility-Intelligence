@@ -44,16 +44,10 @@ def show():
 
             st.image(
                 "assets/Home_page_image.jpg",
-                width=180
+                width="stretch"
             )
 
-            st.markdown("### Predicted Visibility")
-
-            st.metric(
-                label="",
-                value="8.42 km",
-                delta="Good Visibility"
-            )
+            
 
     st.divider()
 
@@ -73,7 +67,7 @@ def show():
         "Linear Regression\n\nDecision Tree\n\nRandom Forest\n\nXGBoost",
         "Understand every prediction using SHAP Explainable AI.",
         "Interactive charts and feature importance analysis.",
-        "Export reports in PDF and CSV.",
+        "Export reports in CSV.",
         "Fast prediction pipeline using optimized ML models."
     ]
 

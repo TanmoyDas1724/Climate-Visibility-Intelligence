@@ -40,13 +40,6 @@ def show():
 
     st.divider()
 
-    # Statistical Summary 
-
-    st.subheader("📈 Statistical Summary")
-
-    st.dataframe(df.describe())
-    st.divider()
-
     st.subheader("📊 Feature Distribution")
 
     numeric_columns = df.select_dtypes(include="number").columns.tolist()

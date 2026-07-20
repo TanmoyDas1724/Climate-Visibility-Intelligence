@@ -46,6 +46,7 @@ contributes to a machine learning prediction.
         shap_values,
         X,
         plot_type="bar",
+        max_display=8,
         show=False
     )
 
@@ -60,6 +61,7 @@ contributes to a machine learning prediction.
     shap.summary_plot(
         shap_values,
         X,
+        max_display=8,
         show=False
     )
 

@@ -16,25 +16,38 @@ def show():
 
     st.divider()
 
-    # -----------------------------------------------------
-    # Project Overview
-    # -----------------------------------------------------
-
-    st.subheader("🌦️ Project Overview")
-
-    st.write("""
-The **Climate Visibility Intelligence Dashboard** is an end-to-end Machine Learning application
-developed to predict atmospheric visibility using historical weather data.
-
-The dashboard combines data analysis, machine learning, and explainable AI to help users
-understand how different weather conditions influence visibility.
-""")
 
     st.divider()
 
-    # -----------------------------------------------------
+    # Project Overview
+    
+
+    left_col, right_col = st.columns([1.2, 1])
+
+    with left_col:
+
+        st.subheader("🌦️ Project Overview")
+
+        st.write("""
+The **Climate Visibility Intelligence Dashboard** is an end-to-end Machine Learning application developed to predict atmospheric visibility using historical weather data.
+
+The dashboard combines data analysis, machine learning, and Explainable AI (SHAP) to help users understand how different weather conditions influence visibility.
+
+It provides interactive analytics, model comparison, prediction, explainability, and downloadable reports in one unified dashboard.
+        """)
+
+    with right_col:
+
+        st.image(
+            "assets/project_overview.png",
+            width="stretch"
+        )
+
+    st.divider()
+
+    
     # Objectives
-    # -----------------------------------------------------
+    
 
     st.subheader("🎯 Project Objectives")
 
@@ -47,9 +60,11 @@ understand how different weather conditions influence visibility.
 
     st.divider()
 
-    # -----------------------------------------------------
+    
     # Technology Stack
-    # -----------------------------------------------------
+    
+
+   
 
     st.subheader("🛠️ Technology Stack")
 
@@ -57,48 +72,49 @@ understand how different weather conditions influence visibility.
 
     with col1:
 
-        st.markdown("""
-### Frontend
-- Streamlit
+        st.info("""
+    ###  Frontend
 
-### Backend
-- Python
-""")
+    **Framework**
+
+    - Streamlit
+
+    """)
+
+        st.info("""
+    ### Backend
+
+    **Language**
+
+    - Python
+
+
+    """)
 
     with col2:
 
-        st.markdown("""
-### Machine Learning
-- Scikit-learn
-- XGBoost
+        st.info("""
+    ### Machine Learning
 
-### Visualization
-- Plotly
-- Matplotlib
-- SHAP
-""")
+    **Libraries**
 
-    st.divider()
+    - Scikit-learn
+    - XGBoost
+    """)
 
-    # -----------------------------------------------------
-    # Machine Learning Models
-    # -----------------------------------------------------
+        st.info("""
+    ###  Visualization
 
-    st.subheader("🤖 Machine Learning Models")
+    **Libraries**
 
-    st.markdown("""
-- Linear Regression
-- Decision Tree Regressor
-- Random Forest Regressor
-- Baseline XGBoost
-- ⭐ Tuned XGBoost (Best Performing Model)
-""")
+    - Plotly
+    - Matplotlib
+    - SHAP
+    """)
 
-    st.divider()
-
-    # -----------------------------------------------------
+    # =====================================================
     # Dataset
-    # -----------------------------------------------------
+    # =====================================================
 
     st.subheader("📊 Dataset")
 
@@ -122,9 +138,9 @@ understand how different weather conditions influence visibility.
 
     st.divider()
 
-    # -----------------------------------------------------
+    # =====================================================
     # Future Improvements
-    # -----------------------------------------------------
+    # =====================================================
 
     st.subheader("🚀 Future Improvements")
 
@@ -138,19 +154,22 @@ understand how different weather conditions influence visibility.
 
     st.divider()
 
-    # -----------------------------------------------------
+    # =====================================================
     # Developer
-    # -----------------------------------------------------
+    # =====================================================
 
     st.subheader("👨‍💻 Developer")
 
     st.markdown("""
-**Tanmoy Das**
+### Tanmoy Das
 
-**GitHub:** https://github.com/TanmoyDas1724
+**GitHub**
 
-**LinkedIn:** https://www.linkedin.com/in/tanmoy-das-719379314/
+https://github.com/TanmoyDas1724
 
+**LinkedIn**
+
+https://www.linkedin.com/in/tanmoy-das-719379314/
 """)
 
     show_footer()
