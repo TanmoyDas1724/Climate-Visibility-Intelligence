@@ -43,7 +43,7 @@ def show():
         with right_col:
 
             st.image(
-                "https://cdn-icons-png.flaticon.com/512/1779/1779807.png",
+                "assets/Home_page_image.jpg",
                 width=180
             )
 
