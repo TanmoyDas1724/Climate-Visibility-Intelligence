@@ -1,6 +1,31 @@
 # 🌦️ Climate Visibility Intelligence Dashboard
 
-An end-to-end **Machine Learning Web Application** built with **Streamlit** that predicts atmospheric visibility using historical weather conditions. The project combines predictive modeling, interactive analytics, and Explainable AI (SHAP) into a modern dashboard.
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?style=for-the-badge&logo=streamlit)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge&logo=scikitlearn)
+![XGBoost](https://img.shields.io/badge/XGBoost-Regressor-green?style=for-the-badge)
+![SHAP](https://img.shields.io/badge/Explainable_AI-SHAP-purple?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+
+</p>
+
+---
+
+## 🌍 Overview
+
+The **Climate Visibility Intelligence Dashboard** is an end-to-end Machine Learning application that predicts atmospheric visibility using weather parameters.
+
+The dashboard combines **Machine Learning**, **Interactive Analytics**, and **Explainable AI (SHAP)** into a single Streamlit application.
+
+It allows users to
+
+- 🔮 Predict atmospheric visibility
+- 📊 Explore historical weather data
+- 🤖 Compare multiple ML models
+- 🧠 Understand model predictions using SHAP
+- 📥 Download reports and datasets
 
 ---
 
@@ -12,215 +37,131 @@ https://climate-visibility-intelligence-4g3qozcdse8t45cv7l7gbs.streamlit.app/
 
 ---
 
-## 📌 Project Overview
+# 📸 Dashboard Preview
 
-The Climate Visibility Intelligence Dashboard predicts atmospheric visibility based on real-world weather parameters.
+## 🏠 Home
 
-The application includes:
-
-- 🔮 Visibility Prediction using a Tuned XGBoost model
-- 📊 Interactive Weather Analytics
-- 📈 Machine Learning Model Comparison
-- 🧠 Explainable AI (SHAP)
-- 📥 Download Prediction Reports
-- 🎨 Modern Responsive Streamlit Interface
+![](assets/screenshots/home.png)
 
 ---
 
-## 🚀 Features
+## 🔮 Prediction
 
-### 🏠 Home
-
-- Project overview
-- Feature highlights
-- Quick navigation
-- Modern dashboard UI
+![](assets/screenshots/prediction.png)
 
 ---
 
-### 🔮 Prediction
+## 📊 Analytics
 
-Predict visibility using weather parameters including:
-
-- Temperature
-- Apparent Temperature
-- Humidity
-- Wind Speed
-- Wind Bearing
-- Pressure
-- Cloud Cover
-- Weather Summary
-- Precipitation Type
-- Date & Time
-
-Outputs include:
-
-- Predicted Visibility
-- Visibility Category
-- Tuned XGBoost Prediction
+![](assets/screenshots/analytics.png)
 
 ---
 
-### 📊 Analytics
+## 🧠 Explainability (SHAP)
 
-Interactive Exploratory Data Analysis
-
-- Dataset Preview
-- Summary Statistics
-- Feature Distribution
-- Box Plot
-- Correlation Heatmap
+![](assets/screenshots/explainability.png)
 
 ---
 
-### 📈 Model Comparison
+## 📥 Downloads
 
-Performance comparison of
+![](assets/screenshots/downloads.png)
+
+---
+
+## ℹ️ About
+
+![](assets/screenshots/about.png)
+
+---
+
+# ✨ Features
+
+- 🌦️ Weather Visibility Prediction
+- 📈 Interactive Analytics Dashboard
+- 🧠 Explainable AI using SHAP
+- 📊 Model Performance Comparison
+- 📥 CSV Download Support
+- 📂 Sample Dataset Download
+- 🎨 Modern Dark Dashboard UI
+- ⚡ Fast Predictions using Tuned XGBoost
+
+---
+
+# 🛠️ Technology Stack
+
+| Category | Technologies |
+|-----------|-------------|
+| Frontend | Streamlit |
+| Backend | Python |
+| Machine Learning | Scikit-learn, XGBoost |
+| Explainability | SHAP |
+| Visualization | Plotly, Matplotlib |
+| Data Processing | Pandas, NumPy |
+| Model Saving | Joblib |
+
+---
+
+# 🤖 Machine Learning Models
+
+The following regression models were trained and evaluated.
 
 - Linear Regression
-- Decision Tree
-- Random Forest
-- XGBoost
-- Tuned XGBoost
-
-Evaluation Metrics
-
-- R² Score
-- MAE
-- RMSE
+- Decision Tree Regressor
+- Random Forest Regressor
+- Baseline XGBoost
+- ⭐ Tuned XGBoost (Best Model)
 
 ---
 
-### 🧠 Explainability
+# 📊 Model Performance
 
-Explain model predictions using SHAP.
+| Model | MAE | RMSE | R² Score |
+|------|------|------|------|
+| Linear Regression | 2.4960 | 3.0290 | 0.4813 |
+| Decision Tree | 1.5368 | 2.2878 | 0.7041 |
+| Random Forest | 1.1873 | 1.8434 | 0.8079 |
+| Baseline XGBoost | 1.4365 | 2.0404 | 0.7646 |
+| ⭐ Tuned XGBoost | **1.1977** | **1.7759** | **0.8217** |
 
-Includes
+---
 
-- Feature Importance
+# 🧠 Explainable AI
+
+The project integrates **SHAP (SHapley Additive exPlanations)** to explain model predictions.
+
+The Explainability Dashboard includes
+
+- Global Feature Importance
 - SHAP Summary Plot
+- Feature Contribution Analysis
+
+This enables users to understand **why** the model predicts a particular visibility value instead of treating it as a black box.
 
 ---
 
-### 📥 Downloads
-
-Download
-
-- Prediction Results
-- Model Performance Metrics
-- Sample Dataset
-
----
-
-### ℹ️ About
-
-Project overview
-
-Technology stack
-
-Developer information
-
----
-
-## 🛠️ Tech Stack
-
-### Programming Language
-
-- Python
-
-### Machine Learning
-
-- Scikit-learn
-- XGBoost
-- SHAP
-
-### Data Processing
-
-- Pandas
-- NumPy
-
-### Visualization
-
-- Matplotlib
-- Plotly
-
-### Web Framework
-
-- Streamlit
-
----
-
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
-Climate-Visibility-Intelligence/
-
+Climate-Visibility-Intelligence
+│
 ├── assets/
 ├── components/
 ├── data/
-├── models/
 ├── notebooks/
 ├── pages/
 ├── src/
 ├── styles/
+│
 ├── main.py
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-## 📷 Application Screenshots
-
-### 🏠 Home
-
-![Home](screenshots/home.png)
-
----
-
-### 🔮 Prediction
-
-![Prediction](screenshots/prediction.png)
-
----
-
-### 📊 Analytics
-
-![Analytics](screenshots/analytics.png)
-
----
-
-### 🧠 Explainability
-
-![Explainability](screenshots/explainability.png)
-
----
-
-### 📥 Downloads
-
-![Downloads](screenshots/downloads.png)
-
----
-
-### ℹ️ About
-
-![About](screenshots/about.png)
-
----
-
-## 📈 Model Performance
-
-| Model | R² Score |
-|------|---------|
-| Linear Regression | 0.4813 |
-| Decision Tree | 0.7041 |
-| Random Forest | 0.8079 |
-| XGBoost | 0.7646 |
-| **Tuned XGBoost** | **0.8217** |
-
----
-
-## ⚙️ Installation
+# ⚙️ Installation
 
 Clone the repository
 
@@ -248,22 +189,78 @@ streamlit run main.py
 
 ---
 
-## 👨‍💻 Developer
+# 📁 Dataset
 
-**Tanmoy Das**
+**Weather History Dataset**
 
-🎓 B.Tech CSE (AI & ML)
+Target Variable
 
-🔗 GitHub
+```
+Visibility (km)
+```
+
+Features include
+
+- Temperature
+- Apparent Temperature
+- Humidity
+- Pressure
+- Wind Speed
+- Wind Bearing
+- Summary
+- Precipitation Type
+- Date-Time Features
+
+---
+
+# 🎯 Project Objectives
+
+- Predict atmospheric visibility using weather parameters.
+- Compare multiple regression models.
+- Explain predictions using SHAP.
+- Explore historical weather data.
+- Build a complete Machine Learning dashboard.
+
+---
+
+# 🚀 Future Improvements
+
+- Live Weather API Integration
+- Real-Time Prediction
+- Weather Forecast Support
+- Mobile Responsive Layout
+- Cloud Deployment
+- User Authentication
+- Docker Support
+
+---
+
+# 👨‍💻 Developer
+
+## Tanmoy Das
+
+**GitHub**
 
 https://github.com/TanmoyDas1724
 
-🔗 LinkedIn
+**LinkedIn**
 
 https://www.linkedin.com/in/tanmoy-das-719379314/
 
 ---
 
-## ⭐ If you found this project useful
+# ⭐ If you found this project useful
 
-Please consider giving this repository a ⭐ on GitHub.
+Please consider giving the repository a **Star ⭐**
+
+It motivates me to build more Machine Learning projects.
+
+---
+
+<p align="center">
+
+**Climate Visibility Intelligence Dashboard**
+
+Built with ❤️ using Streamlit, Scikit-learn, XGBoost & SHAP
+
+</p>
